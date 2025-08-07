@@ -1,0 +1,6 @@
+name	contigs_db_path
+Corynebacterium_durum_JJ1	CdurumJJ1_contigs2.db
+Corynebacterium_durum	Cdurum_contigs2.db
+Corynebacterium_argentoratense	Cargentoratense_contigs2.db
+Corynebacterium_matruchotii_1	Cmatruchotii1_contigs2.db
+Corynebacterium_matruchotii_2	Cmatruchotii2_contigs2.db

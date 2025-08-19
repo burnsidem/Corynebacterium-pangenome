@@ -1,0 +1,7 @@
+name	contigs_db_path
+Cargentoratense	C_argentoratense.db
+CdurumJJ1	C_durum_JJ1.db
+CdurumJJ2	C_durum_JJ2.db
+Cglutamicum	c_glutamicum.db
+CmatruchotiiATCC	C_matruchotii_ATCC.db
+CmatruchotiiNCTC	C_matruchotii_NCTC.db

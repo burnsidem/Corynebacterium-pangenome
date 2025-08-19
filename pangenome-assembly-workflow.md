@@ -58,10 +58,11 @@ anvi-summarize -p PANGENOME/PANGENOME-PAN.db -g GENOMES.db -C default
 -C is the collection name, use --list-collections to show available collections
 
 # Phylogenomic tree assembly using pangenome
+We used a separate pangenome that includes the non-oral Corynebacterium, C. glutamicum. See second external genomes file for reference.
 
 ## 1. get sequences for gene clusters (single copy core genes) 
 ```sh
-anvi-get-sequences-for-gene-clusters -g GENOMES.db -p PANGENOME/PANGENOME-PAN.db -o organized-pan.fa --min-num-genomes-gene-cluster-occurs 6 -max-num-genes-from-each-genome 1 --max-functional-homogeneity-index 0.9 --min-geometric-homogeneity-index 1 --concatenate-gene-cluster
+anvi-get-sequences-for-gene-clusters -g ~/tree/GENOMES.db -p Corynebacterial_Pangenome-PAN.db -o organized-pan.fa --min-num-genomes-gene-cluster-occurs 6 -max-num-genes-from-each-genome 1 --max-functional-homogeneity-index 0.9 --min-geometric-homogeneity-index 1 --concatenate-gene-cluster
 ```
 ## 2. generate phylogenomic tree 
 ```sh
@@ -71,5 +72,6 @@ iqtree -s organized-pan.fa -nt 6 -m WAG -bb 1000
 ```sh
 anvi-interactive -p phylogenomic-profile.coryne.db --manual -t organized-pan.fa.contree
 ```
+
 
 
